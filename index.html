@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActivTrak Subscription Plans Comparison</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a3a6e 0%, #2a5db0 100%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #04b3b0;
+        }
+        
+        .logo {
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+        
+        h2 {
+            color: #1a3a6e;
+            border-bottom: 2px solid #04b3b0;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        
+        .comparison-table th {
+            background-color: #1a3a6e;
+            color: white;
+            font-weight: bold;
+            padding: 12px 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .comparison-table th:first-child {
+            text-align: left;
+            background-color: #2a5db0;
+        }
+        
+        .comparison-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dddddd;
+            text-align: center;
+        }
+        
+        .comparison-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .comparison-table tr:nth-of-type(even) {
+            background-color: #f5f8ff;
+        }
+        
+        .comparison-table tr:hover {
+            background-color: #e9f0ff;
+        }
+        
+        .checkmark {
+            color: #04b3b0;
+            font-weight: bold;
+        }
+        
+        .xmark {
+            color: #e63946;
+            font-weight: bold;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .footer {
+            background-color: #1a3a6e;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        
+        .plan-header {
+            position: sticky;
+            top: 0;
+            background-color: #1a3a6e;
+            z-index: 5;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .comparison-table {
+                font-size: 14px;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px 10px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+        
+        .category-header {
+            background-color: #e0ecff;
+            font-weight: bold;
+        }
+        
+        .category-header td {
+            text-align: left !important;
+            color: #1a3a6e;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 800 200">
+                    <g>
+                        <!-- Blue Triangle -->
+                        <path d="M150 30 L50 170 L250 170 Z" fill="#2a5db0"/>
+                        <!-- Teal Triangle -->
+                        <path d="M120 90 L60 170 L180 170 Z" fill="#04b3b0"/>
+                        <!-- Dark Triangle -->
+                        <path d="M150 90 L90 170 L210 170 Z" fill="#1a3a6e"/>
+                        <!-- Text -->
+                        <text x="280" y="135" font-family="Arial, sans-serif" font-size="90" font-weight="bold" fill="#333">
+                            <tspan>Activ</tspan><tspan font-weight="bolder">Trak</tspan>
+                        </text>
+                    </g>
+                </svg>
+            </div>
+            <h1>Subscription Plans Comparison</h1>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Features and Analytics Capabilities</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr class="plan-header">
+                        <th>Feature</th>
+                        <th>Essentials</th>
+                        <th>Essentials Plus</th>
+                        <th>Professional</th>
+                        <th>Advanced</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="category-header">
+                        <td colspan="6">Basic Information</td>
+                    </tr>
+                    <tr>
+                        <td>Users</td>
+                        <td>Unlimited</td>
+                        <td>Unlimited</td>
+                        <td>Unlimited</td>
+                        <td>Unlimited</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>Pricing Model</td>
+                        <td>Per user, annually</td>
+                        <td>Per user, annually</td>
+                        <td>Per user, annually</td>
+                        <td>Per user, annually</td>
+                        <td>Per user, annually</td>
+                    </tr>
+                    <tr>
+                        <td>Historical Data Retention</td>
+                        <td>3 months</td>
+                        <td>6 months</td>
+                        <td>12 months</td>
+                        <td>13 months</td>
+                        <td>13+ months</td>
+                    </tr>
+                    
+                    <tr class="category-header">
+                        <td colspan="6">Core Activity Monitoring</td>
+                    </tr>
+                    <tr>
+                        <td>Agent Installation</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Native Application Monitoring</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Web URL Monitoring</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>User & Team Activity Reports</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Activity Categorization</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Workforce Productivity Insights</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Pre-Built Dashboards</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Team Productivity Pulse</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Alarm Settings</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Scheduled Reports</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>USB Device Access</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Screenshot Playback</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Remote Screenshot Control</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Video Playback</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    
+                    <tr class="category-header">
+                        <td colspan="6">Security Features</td>
+                    </tr>
+                    <tr>
+                        <td>Risk Score Insights</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Insider Threat Detection</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>File Transfer Tracking</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    
+                    <tr class="category-header">
+                        <td colspan="6">Team Productivity Features</td>
+                    </tr>
+                    <tr>
+                        <td>Team Benchmarks</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Custom Categories & Rules</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Productivity Coaching</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Top Websites & Applications Over Time</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    
+                    <tr class="category-header">
+                        <td colspan="6">Employee Wellness Features</td>
+                    </tr>
+                    <tr>
+                        <td>Personal Insights Dashboard</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Focus Time Analysis</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Workload Balance Analysis</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Burnout Risk Assessment</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Efficiency Analysis</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Technology Utilization</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Collaboration Analysis</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Goal Creation & Tracking</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    
+                    <tr class="category-header">
+                        <td colspan="6">Advanced Analytics</td>
+                    </tr>
+                    <tr>
+                        <td>Application Program Interface (API)</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Data Connect</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Workforce Insights</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Benchmarks & Goals</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Productivity Coaching Plans</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    
+                    <tr class="category-header">
+                        <td colspan="6">Premium Exclusive Features</td>
+                    </tr>
+                    <tr>
+                        <td>Business Value Assessment</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Business Value Insights</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Executive Review</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>User Training</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Support Plans</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr class="plan-header">
+                        <th>Support Feature</th>
+                        <th>Essentials</th>
+                        <th>Essentials Plus</th>
+                        <th>Professional</th>
+                        <th>Advanced</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Email Support</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Knowledge Base</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Community Forum</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Live Chat</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Support</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>24/7 Critical Support</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Success Manager</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Technical Account Manager</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td>Optional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Implementation Services</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr class="plan-header">
+                        <th>Implementation Services</th>
+                        <th>Essentials</th>
+                        <th>Essentials Plus</th>
+                        <th>Professional</th>
+                        <th>Advanced</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Self-Service Resources</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Standard Implementation</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td>Optional</td>
+                        <td>Optional</td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Premium Implementation</td>
+                        <td><span class="xmark">✗</span></td>
+                        <td><span class="xmark">✗</span></td>
+                        <td>Optional</td>
+                        <td>Optional</td>
+                        <td>Optional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <p>© 2025 ActivTrak, Inc. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
